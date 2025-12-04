@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/sss/link-saver/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>link-saver</title>
+  <script type="module" crossorigin src="/sss/link-saver/assets/index-D3df_T5N.js"></script>
+  <link rel="stylesheet" crossorigin href="/sss/link-saver/assets/index-mXY5Ritj.css">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1>Link Saver</h1>
+      <button id="add-link-btn" class="primary-btn">Add Link</button>
+    </header>
+
+    <main>
+      <div id="link-grid" class="grid">
+        <!-- Links will be rendered here -->
+      </div>
+    </main>
+
+    <dialog id="link-modal">
+      <form id="link-form" method="dialog">
+        <h2 id="modal-title">Add New Link</h2>
+        <input type="hidden" id="link-id" name="id">
+
+        <div class="form-group">
+          <label for="link-name">Name</label>
+          <input type="text" id="link-name" name="name" required placeholder="e.g. Google">
+        </div>
+
+        <div class="form-group">
+          <label for="link-url">URL</label>
+          <input type="url" id="link-url" name="url" required placeholder="https://google.com">
+        </div>
+
+        <div class="form-group">
+          <label for="link-logo">Logo URL</label>
+          <input type="url" id="link-logo" name="logoUrl" required placeholder="https://google.com/favicon.ico">
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" id="cancel-btn" class="secondary-btn">Cancel</button>
+          <button type="submit" id="save-btn" class="primary-btn">Save</button>
+        </div>
+      </form>
+    </dialog>
+  </div>
+</body>
+
+</html>
